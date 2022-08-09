@@ -44,7 +44,7 @@
 @media screen and (max-width: 768px){
 	.offcanvas.offcanvas-end {
 	    padding-top: 60px;
-	    background-color: #000;
+	    background-color:#2f333a;
 	    height: 100vh;
 		z-index: 9;
 		overflow-y: auto;
