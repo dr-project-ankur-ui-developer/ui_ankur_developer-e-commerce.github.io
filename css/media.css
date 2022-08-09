@@ -1,0 +1,88 @@
+ @media screen and (max-width: 1200px),(min-width: 1024px){
+
+}
+
+@media screen and (min-width: 992px){
+		.navbar-nav{
+			padding-left:calc(10rem - 1.2rem);
+		}
+}
+
+@media screen and (min-width: 769px){
+
+	.navbar-nav .dropdown-menu{
+		opacity: 0;
+		visibility: hidden;
+		width: 230px;
+		border-radius: 0%!important;
+		top:100%;
+		perspective: 1000px	
+	}
+
+	.dropdown:hover .dropdown-menu{
+		opacity: 1!important;
+		visibility: visible;
+		z-index: 2;
+		animation: rotateMenu 500ms ease-in-out forwards;
+		transform-origin: top center;	
+	}
+
+	@keyframes rotateMenu {
+		0% {
+			transform: rotateX(-90deg)
+		}
+		70% {
+			transform: rotateX(20deg) 
+		}
+		100% {
+			transform: rotateX(0deg) 
+		}
+	} 
+
+}
+
+@media screen and (max-width: 768px){
+	.offcanvas.offcanvas-end {
+	    padding-top: 60px;
+	    background-color: #000;
+	    height: 100vh;
+		z-index: 9;
+		overflow-y: auto;
+	}
+	.offcanvas.offcanvas-end .navbar-nav .nav-link{
+		border-bottom: 1px solid rgba(255, 255, 255, .3);
+		padding-block: .7rem;
+		border-width: thin;
+	}
+	.offcanvas.offcanvas-end .navbar-nav:last-child{
+		border-bottom: 0px;
+	}
+	.offcanvas.offcanvas-end .navbar-nav .nav-item .dropdown-toggle{
+		display: flex;
+		justify-content: space-between;	
+	}
+}	
+
+
+@media screen and (max-width: 592px){
+	.Support,
+	.serch,
+	.rg-sign{
+		font-size: 80%;
+		gap:.5rem	
+	}
+	.Support h5{
+		font-size: 1em;
+	}
+	.product-1 .slick-prev{
+		left:-6px;
+		z-index: 1;	
+	}
+	.product-1 .slick-next{
+		left: auto;
+		right: 14px;
+	}
+	#myTab button{
+		padding: 8px;
+	}
+}
